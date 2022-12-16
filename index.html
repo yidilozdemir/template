@@ -5,13 +5,47 @@
 </head>
 <body>
 
-<select onchange="document.getElementById('preview').src = this.value">
-  <option selected disabled>Pick one of the gifs...</option>
-  <option value="https://figshare.com/ndownloader/files/27545090/preview/27545090/preview.gif">Gif 1</option>
-  <option value="https://figshare.com/ndownloader/files/27545087/preview/27545087/preview.gif">Gif 2</option>
+
+function changeSeason(){
+  var article_id;
+  if(document.getElementById("season").value == "1"){
+      article_id = 27545090;
+  }
+  else{
+    if(document.getElementById("season").value == "2"){
+       article_id = 27545087;
+    } else{
+        article_id = 27545087;
+    }
+  }
+}
+changeLevel();
+ 
+<body>
+    <script>
+      var path1 = "https://figshare.com/ndownloader/files/";
+      var path2 = "/preview/";
+      var path3 = "/preview.gif";
+      var totalpath = path1 + article_id + path2 + article_id + path3;
+     </script>
+</body>
+  
+<select id="season" onchange='changeSeason()'>
+        <option value="1">summer</option>
+        <option value="2">winter</option>
 </select>
-<br>
-<img id="preview" style="width:480px;height:480px;">
+  
+<img id=totalpath style="width:480px;height:480px;">
+
+  
+  
+#<select onchange="document.getElementById('preview').src = this.value">
+#  <option selected disabled>Pick one of the gifs...</option>
+#  <option value="https://figshare.com/ndownloader/files/27545090/preview/27545090/preview.gif">Gif 1</option>
+ # <option value="https://figshare.com/ndownloader/files/27545087/preview/27545087/preview.gif">Gif 2</option>
+#</select>
+#<br>
+#<img id="preview" style="width:480px;height:480px;">
   
 
 </body>
