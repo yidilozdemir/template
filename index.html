@@ -5,21 +5,22 @@
 </head>
 <body>
 
-
 function changeSeason(){
-  var article_id;
-  if(document.getElementById("season").value == "1"){
-      article_id = 27545090;
-  }
-  else{
-    if(document.getElementById("season").value == "2"){
-       article_id = 27545087;
-    } else{
-        article_id = 27545087;
-    }
-  }
-}
-changeLevel();
+          var article_id;
+          if(document.getElementById("season").value == "1"){
+              article_id = 27545090;
+          }
+          else{
+            if(document.getElementById("season").value == "2"){
+               article_id = 27545087;
+            } else{
+                article_id = 27545087;
+            }
+          }
+      }
+changeSeason();
+
+
  
 <body>
     <script>
@@ -27,6 +28,7 @@ changeLevel();
       var path2 = "/preview/";
       var path3 = "/preview.gif";
       var totalpath = path1 + article_id + path2 + article_id + path3;
+      
      </script>
 </body>
   
