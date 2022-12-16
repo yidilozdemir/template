@@ -5,6 +5,7 @@
 </head>
 <body>
 
+<script type = "text/javascript">  
 function changeSeason(){
           var article_id;
           if(document.getElementById("season").value == "1"){
@@ -19,7 +20,7 @@ function changeSeason(){
           }
       }
 changeSeason();
-
+<script>
 
  
 <body>
@@ -28,8 +29,7 @@ changeSeason();
       var path2 = "/preview/";
       var path3 = "/preview.gif";
       var totalpath = path1 + article_id + path2 + article_id + path3;
-      
-     </script>
+    </script>
 </body>
   
 <select id="season" onchange='changeSeason()'>
