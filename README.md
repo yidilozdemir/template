@@ -2,4 +2,6 @@
 Prototype gitpage for ukcordex project
 
 # example gif
-![](https://widgets.figshare.com/articles/9211256/embed?show_title=1)
+
+
+![](https://figshare.com/articles/dataset/product2_gif/9211256/product2.gif)
