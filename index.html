@@ -3,20 +3,16 @@
 <head>
   <title>EUROCordex UK projections prototype</title>
 </head>
+<body>
+
+<select onchange="document.getElementById('preview').src = this.value">
+  <option selected disabled>Pick one of the gifs...</option>
+  <option value="https://figshare.com/ndownloader/files/27545090/preview/27545090/preview.gif">Gif 1</option>
+  <option value="https://figshare.com/ndownloader/files/27545087/preview/27545087/preview.gif">Gif 2</option>
+</select>
+<br>
+<img id="preview" style="width:480px;height:480px;">
+  
 
 </body>
-<label for="season">Choose a season:</label>
-<select id = "season" onchange="document.getElementById('season').src = this.value">
-	<option selected disabled>Pick one of the gifs...</option>
-        <option value="27545090">summer</option>
-        <option value="27545087">winter</option>
-</select>
-
-<img src="{% static 'https://figshare.com/ndownloader/files/' %}{{"season"}}{% static 'preview/' %}{{"season" }}{% static '/preview.gif" alt={{ "season" }}/>
-
-<body>
-<html>
-
-
-
-
+</html>
