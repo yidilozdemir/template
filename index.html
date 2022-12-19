@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +6,17 @@
 
 </body>
 <label for="season">Choose a season:</label>
-<select onchange="document.getElementById('season').src = this.value">
-		<option selected disabled>Pick one of the gifs...</option>
+<select id = "season" onchange="document.getElementById('season').src = this.value">
+	<option selected disabled>Pick one of the gifs...</option>
         <option value="27545090">summer</option>
         <option value="27545087">winter</option>
 </select>
 
-<img src="{% static 'https://figshare.com/ndownloader/files/' %}{{season}}{% static 'preview/' %}{{season}}{% static '/preview.gif" alt={{ season }} >
+<img src="{% static 'https://figshare.com/ndownloader/files/' %}{{season}}{% static 'preview/' %}{{ season }}{% static '/preview.gif" alt={{ season }}/>
 
 <body>
 <html>
+
 
 
 
