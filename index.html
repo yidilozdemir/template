@@ -1,42 +1,22 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>EUROCordex UK projections prototype</title>
 </head>
 
-<script type = "text/javascript">  
-function changeSeason(){
-          var article_id;
-          if(document.getElementById("season").value == "1"){
-              article_id = 27545090;
-          }
-          else{
-            if(document.getElementById("season").value == "2"){
-               article_id = 27545087;
-            } else{
-                article_id = 27545087;
-            }
-          }
-      }
-      var path1 = "https://figshare.com/ndownloader/files/";
-      var path2 = "/preview/";
-      var path3 = "/preview.gif";
-      var totalpath = path1 + article_id + path2 + article_id + path3;
-    </script>
-
 </body>
 <label for="season">Choose a season:</label>
-<select id="season" onchange='changeSeason(this)'>
-        <option value="1">summer</option>
-        <option value="2">winter</option>
+<select onchange="document.getElementById('season').src = this.value">
+		<option selected disabled>Pick one of the gifs...</option>
+        <option value="27545090">summer</option>
+        <option value="27545087">winter</option>
 </select>
 
-<img id="totalpath" style="width:480px;height:480px;">
-  
+<img src="{% static 'https://figshare.com/ndownloader/files/' %}{{season}}{% static 'preview/' %}{{season}}{% static '/preview.gif" alt={{ season }} >
 
+<body>
+<html>
 
-
-</body>
-</html>
 
 
