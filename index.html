@@ -3,7 +3,6 @@
 <head>
   <title>EUROCordex UK projections prototype</title>
 </head>
-<body>
 
 <script type = "text/javascript">  
 function changeSeason(){
@@ -19,25 +18,21 @@ function changeSeason(){
             }
           }
       }
-changeSeason();
-<script>
-
- 
-<body>
-    <script>
       var path1 = "https://figshare.com/ndownloader/files/";
       var path2 = "/preview/";
       var path3 = "/preview.gif";
       var totalpath = path1 + article_id + path2 + article_id + path3;
     </script>
+
 </body>
-  
-<select id="season" onchange='changeSeason()'>
+<label for="season">Choose a season:</label>
+<select id="season" onchange='changeSeason(this)'>
         <option value="1">summer</option>
         <option value="2">winter</option>
 </select>
-  
+
 <img id="totalpath" style="width:480px;height:480px;">
+  
 
 
 
