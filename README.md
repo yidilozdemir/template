@@ -1,3 +1,3 @@
-# ukcordex_prototype.github.io
+# profile
 Prototype gitpage for profile
 
